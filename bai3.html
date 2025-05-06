@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bai3.css">
+</head>
+<body>
+<h2>Quản lý sách</h2>
+
+<!-- Khu vực nhập dữ liệu -->
+<div>
+    <label>Mã sách: </label>
+    <input type="text" id="maSach" placeholder="Ví dụ:12345">
+    <label>Tên sách: </label>
+    <input type="text" id="tenSach">
+    <label>Năm xuất bản: </label>
+    <input type="number" id="namXB">
+    <label>Số quyển: </label>
+    <input type="number" id="soQuyen" min="1">
+    <label>Tình trạng: </label>
+    <select id="tinhTrang">
+        <option value="true">Chưa mượn</option>
+        <option value="false">Đã mượn</option>
+    </select>
+    <button onclick="themSach()">Thêm sách</button>
+    <button onclick="hienThiSachChuaMuon()">Hiện sách chưa mượn</button>
+    <button onclick="hienThiToanBo()">Hiện tất cả</button>
+</div>
+<table>
+    <thead>
+    <tr>
+        <th>Mã sách</th>
+        <th>Tên sách</th>
+        <th>Năm xuất bản</th>
+        <th>Số quyển</th>
+        <th>Tình trạng</th>
+    </tr>
+    </thead>
+    <tbody id="noiDungBang">
+    </tbody>
+</table>
+<script src="bai3.js"></script>
+</body>
+</html>
